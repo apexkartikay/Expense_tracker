@@ -1,0 +1,1 @@
+A simple and efficient Python-based expense tracker that helps users record, organize, and analyze daily expenses. It allows adding transactions with amount, category, note, and date, making personal budgeting easy and structured.

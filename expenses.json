@@ -1,0 +1,14 @@
+[
+    {
+        "amount": 1000.0,
+        "category": "food",
+        "note": "sharma",
+        "date": "2026-04-28"
+    },
+    {
+        "amount": 20000.0,
+        "category": "travel",
+        "note": "vga to lko",
+        "date": "2026-04-28"
+    }
+]

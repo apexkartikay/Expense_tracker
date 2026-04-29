@@ -32,10 +32,10 @@ def add_expense(data):
 
         data.append(expense)
         save_data(data)
-        print("✅ Expense added!")
+        print(" Expense added!")
 
     except:
-        print("❌ Invalid input!")
+        print(" Invalid input!")
 
 # ---------------- VIEW ----------------
 def view_expenses(data):
@@ -55,7 +55,7 @@ def monthly_summary(data):
         if e["date"].startswith(month):
             total += e["amount"]
 
-    print(f"📊 Total spending in {month}: ₹{total}")
+    print(f" Total spending in {month}: ₹{total}")
 
 # ---------------- CATEGORY ----------------
 def category_summary(data):
@@ -74,7 +74,7 @@ def highest_expense(data):
         return
 
     high = max(data, key=lambda x: x["amount"])
-    print("💸 Highest Expense:", high)
+    print(" Highest Expense:", high)
 
 # ---------------- SEARCH ----------------
 def search(data):
@@ -104,16 +104,16 @@ def budget_alert(data):
     print(f"Spent this month: ₹{total}")
 
     if total > limit:
-        print("⚠️ Budget exceeded!")
+        print(" Budget exceeded!")
     else:
-        print("✅ Within budget")
+        print(" Within budget")
 
 # ---------------- MAIN ----------------
 def main():
     data = load_data()
 
     while True:
-        print("\n==== 💰 EXPENSE TRACKER ====")
+        print("\n====  EXPENSE TRACKER ====")
         print("1. Add Expense")
         print("2. View Expenses")
         print("3. Monthly Summary")
@@ -143,7 +143,7 @@ def main():
         elif choice == "8":
             budget_alert(data)
         elif choice == "9":
-            print("👋 Bye!")
+            print(" Bye!")
             break
         else:
             print("Invalid option")
